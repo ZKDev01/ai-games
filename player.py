@@ -1,9 +1,9 @@
 import random
 from typing import List
 
-from src.utils.minimax import Minimax
-from src.hex.utils import MCTS,HexMCTS
-from src.hex.board import HexBoard
+from utils import minimax
+from utils import MCTS,HexMCTS
+from board import HexBoard
 
 class Player:
   def __init__(self, player_id:int):
@@ -23,11 +23,9 @@ class RandomPlayer(Player):
 class MinimaxPlayer(Player):
   def __init__(self, player_id):
     super().__init__(player_id)
-    self.tree:Minimax = Minimax()
   
   def play(self, board:HexBoard) -> tuple:
-    raise NotImplementedError("Not implemented `play` method in `MinimaxPlayer` class")
-    move:tuple = ...    
+    move:tuple = minimax(board, self.player_id)
     return move
 
 class MCTSPlayer(Player):

@@ -1,6 +1,6 @@
 from typing import List
 import copy
-from src.utils.mcts import Node
+from mcts import Node
 
 direcciones = [
   ( 0, -1), # Izquierda
@@ -10,7 +10,6 @@ direcciones = [
   (-1,  1), # Arriba derecha
   ( 1, -1)  # Abajo izquierda
 ]
-
 
 class HexBoard:
   def __init__(self, size: int):
