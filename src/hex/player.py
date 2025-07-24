@@ -1,9 +1,9 @@
 import random
 from typing import List
 
-from utils import minimax
-from utils import MCTS,HexMCTS
-from board import HexBoard
+from hex.utils import minimax
+from hex.utils import MCTS,HexMCTS
+from hex.board import HexBoard
 
 class Player:
   def __init__(self, player_id:int):

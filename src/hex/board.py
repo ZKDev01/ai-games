@@ -1,6 +1,6 @@
 from typing import List
 import copy
-from mcts import Node
+from hex.mcts import Node
 
 direcciones = [
   ( 0, -1), # Izquierda

@@ -1,6 +1,6 @@
 
-from src.hex.board import HexBoard
-from src.hex.player import MCTSPlayer, MinimaxPlayer, Player, RandomPlayer
+from hex.board import HexBoard
+from hex.player import MCTSPlayer, MinimaxPlayer, Player, RandomPlayer
 
 def run_hex_game(N:int=11) -> None:
   # init game
@@ -12,6 +12,7 @@ def run_hex_game(N:int=11) -> None:
   ai_2:str = 'Minimax'
   
   p_current = p1
+  
   
   while True:
     print("Turn AI: ", p_current.player_id)

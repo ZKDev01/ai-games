@@ -3,8 +3,8 @@ from math import inf
 from typing import List
 from random import choice
 
-from board import HexBoard, is_terminal_game
-from mcts import Node,MCTS
+from hex.board import HexBoard, is_terminal_game
+from hex.mcts import Node,MCTS
 
 
 class HexMCTS(Node):

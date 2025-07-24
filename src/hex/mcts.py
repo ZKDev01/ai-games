@@ -2,7 +2,7 @@ import math
 from typing import Dict,Set,List
 from collections import defaultdict
 
-from node import Node
+from hex.node import Node
 
 
 class MCTS:
